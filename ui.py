@@ -1,6 +1,7 @@
 from pydoc import text
 from tkinter import *
 from quiz_brain import QuizBrain
+from utils import resource_path
 THEME_COLOR = "#375362"
 
 class QuizInterface:
@@ -27,13 +28,13 @@ class QuizInterface:
 
 
         #TODO: Correct Button with image
-        true_image = PhotoImage(file="images/true.png")
+        true_image = PhotoImage(file=resource_path("images/true.png"))
         self.true_button = Button(image=true_image, highlightthickness=0, command=self.pressed_true)
         self.true_button.grid(row=2, column=0, pady=20, padx=20)
 
 
         #TODO: X button with image
-        false_image = PhotoImage(file="images/false.png")
+        false_image = PhotoImage(file=resource_path("images/false.png"))
         self.false_button = Button(image=false_image, highlightthickness=0, command=self.pressed_false)
         self.false_button.grid(row=2,column=1, pady=20, padx=20)
 
