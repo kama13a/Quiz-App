@@ -85,4 +85,4 @@ Quiz-App/
 git clone git@github.com:kama13a/Quiz-App.git
 git checkout develop
 cd Quiz-App
-
+python main.py
